@@ -1,0 +1,41 @@
+<script type="text/html" data-template-name="anywhere365-azure-openai-chat">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-openaiConfig"><i class="fa fa-cog"></i> Configuration</label>
+        <input type="text" id="node-input-openaiConfig">
+    </div>
+    <div class="form-row">
+        <label for="node-input-selectedSource"><i class="fa fa-list"></i> Source</label>
+        <select id="node-input-selectedSource">
+            <option value="msg.payload">Payload</option>
+            <option value="msg.payload.transcriptor.transcript">Anywhere365 Audio Transcript</option>
+            <option value="msg.payload.message">Anywhere365 Text Transcript</option>
+        </select>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="anywhere365-azure-openai-chat">
+    <p>An Anywhere365 node that sends messages to Azure OpenAI for chat completion.</p>
+    
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">string</span>
+        </dt>
+        <dd>The message to send to Azure OpenAI.</dd>
+    </dl>
+
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">string</span>
+        </dt>
+        <dd>The response from Azure OpenAI.</dd>
+    </dl>
+
+    <h3>Details</h3>
+    <p>This Anywhere365 node sends the input message to Azure OpenAI and returns the generated response. The input source can be configured to read from different message properties.</p>
+</script>

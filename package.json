@@ -1,0 +1,28 @@
+{
+    "name": "node-red-contrib-anywhere365-azure-openai-chat",
+    "version": "1.0.0",
+    "description": "Anywhere365 Node-RED node for Azure OpenAI chat interactions",
+    "dependencies": {
+        "node-red": ">=2.0.0"
+    },
+    "node-red": {
+        "nodes": {
+            "anywhere365-azure-openai-chat": "nodes/anywhere365-azure-openai-chat.js",
+            "anywhere365-azure-openai-config": "nodes/anywhere365-azure-openai-config.js"
+        }
+    },
+    "keywords": [
+        "node-red",
+        "anywhere365",
+        "azure",
+        "openai",
+        "chat",
+        "ai"
+    ],
+    "author": "Anywhere365",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anywhere365/node-red-contrib-anywhere365-azure-openai-chat/issues"
+    },
+    "homepage": "https://github.com/anywhere365/node-red-contrib-anywhere365-azure-openai-chat#readme"
+}
